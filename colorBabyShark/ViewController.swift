@@ -61,9 +61,9 @@ class ViewController: UIViewController {
         babySharkGreen = greenSlider.value/255
         headColor.backgroundColor = UIColor(red: CGFloat(babySharkRed), green: CGFloat(babySharkGreen), blue: CGFloat(babySharkBlue), alpha: 1)
         bodyColor.backgroundColor = UIColor(red: CGFloat(babySharkRed), green: CGFloat(babySharkGreen), blue: CGFloat(babySharkBlue), alpha: 1)
-        redSliderValue.text = String(format: "%.0f", redSlider.value)
-        greenSliderValue.text = String(format: "%.0f", greenSlider.value)
-        blueSliderValue.text = String(format: "%.0f", blueSlider.value)
+        redSliderValue.text = String(Int(redSlider.value))
+        greenSliderValue.text = String(Int(greenSlider.value))
+        blueSliderValue.text = String(Int( blueSlider.value))
     }
     
     //原始顏色
@@ -71,11 +71,11 @@ class ViewController: UIViewController {
         redSlider.value = 254
         greenSlider.value = 212
         blueSlider.value = 3
-        headColor.backgroundColor = UIColor(red: CGFloat(redSlider.value/255), green: CGFloat(babySharkGreen/255), blue: CGFloat(blueSlider.value/255), alpha: 1)
-        bodyColor.backgroundColor = UIColor(red: CGFloat(redSlider.value/255), green: CGFloat(babySharkGreen/255), blue: CGFloat(blueSlider.value/255), alpha: 1)
-        redSliderValue.text = String(format: "%.0f", redSlider.value)
-        greenSliderValue.text = String(format: "%.0f", greenSlider.value)
-        blueSliderValue.text = String(format: "%.0f", blueSlider.value)
+        headColor.backgroundColor = UIColor(red: CGFloat(redSlider.value/255), green: CGFloat(greenSlider.value/255), blue: CGFloat(blueSlider.value/255), alpha: 1)
+        bodyColor.backgroundColor = UIColor(red: CGFloat(redSlider.value/255), green: CGFloat(greenSlider.value/255), blue: CGFloat(blueSlider.value/255), alpha: 1)
+        redSliderValue.text = String(Int(redSlider.value))
+        greenSliderValue.text = String(Int(greenSlider.value))
+        blueSliderValue.text = String(Int( blueSlider.value))
     }
     
     //隨機顏色
@@ -83,11 +83,11 @@ class ViewController: UIViewController {
         redSlider.value = Float.random(in: 0...255)
         blueSlider.value = Float.random(in: 0...255)
         greenSlider.value = Float.random(in: 0...255)
-        headColor.backgroundColor = UIColor(red: CGFloat(redSlider.value/255), green: CGFloat(babySharkGreen), blue: CGFloat(blueSlider.value/255), alpha: 1)
-        bodyColor.backgroundColor = UIColor(red: CGFloat(redSlider.value/255), green: CGFloat(babySharkGreen), blue: CGFloat(blueSlider.value/255), alpha: 1)
-        redSliderValue.text = String(format: "%.0f", redSlider.value)
-        greenSliderValue.text = String(format: "%.0f", greenSlider.value)
-        blueSliderValue.text = String(format: "%.0f", blueSlider.value)
+        headColor.backgroundColor = UIColor(red: CGFloat(redSlider.value/255), green: CGFloat(greenSlider.value/255), blue: CGFloat(blueSlider.value/255), alpha: 1)
+        bodyColor.backgroundColor = UIColor(red: CGFloat(redSlider.value/255), green: CGFloat(greenSlider.value/255), blue: CGFloat(blueSlider.value/255), alpha: 1)
+        redSliderValue.text = String(Int(redSlider.value))
+        greenSliderValue.text = String(Int(greenSlider.value))
+        blueSliderValue.text = String(Int( blueSlider.value))
     }
 }
 
