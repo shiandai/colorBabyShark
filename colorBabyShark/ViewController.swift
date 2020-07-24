@@ -71,8 +71,8 @@ class ViewController: UIViewController {
         redSlider.value = 254
         greenSlider.value = 212
         blueSlider.value = 3
-        headColor.backgroundColor = UIColor(red: CGFloat(redSlider.value/255), green: CGFloat(babySharkGreen), blue: CGFloat(blueSlider.value/255), alpha: 1)
-        bodyColor.backgroundColor = UIColor(red: CGFloat(redSlider.value/255), green: CGFloat(babySharkGreen), blue: CGFloat(blueSlider.value/255), alpha: 1)
+        headColor.backgroundColor = UIColor(red: CGFloat(redSlider.value/255), green: CGFloat(babySharkGreen/255), blue: CGFloat(blueSlider.value/255), alpha: 1)
+        bodyColor.backgroundColor = UIColor(red: CGFloat(redSlider.value/255), green: CGFloat(babySharkGreen/255), blue: CGFloat(blueSlider.value/255), alpha: 1)
         redSliderValue.text = String(format: "%.0f", redSlider.value)
         greenSliderValue.text = String(format: "%.0f", greenSlider.value)
         blueSliderValue.text = String(format: "%.0f", blueSlider.value)
