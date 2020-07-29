@@ -29,15 +29,13 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         //將HeadColorView改形狀並
-        var image = UIImage(named: "baby_shark_head")
-        let headView = UIImageView(image: image)
+        let headView = UIImageView(image: UIImage(named: "baby_shark_head"))
         headView.frame = headColor.bounds
         headView.contentMode = .scaleAspectFit
         headColor.mask = headView
         
         //將BodyColorView改形狀
-        image = UIImage(named: "baby_shark_body")
-        let bodyView = UIImageView(image: image)
+        let bodyView = UIImageView(image: UIImage(named: "baby_shark_body"))
         bodyView.frame = bodyColor.bounds
         bodyView.contentMode = .scaleAspectFit
         bodyColor.mask = bodyView
@@ -47,10 +45,6 @@ class ViewController: UIViewController {
         greenSlider.value = 212
         blueSlider.value = 3
         colorChange()
-        
-    }
-    
-    func gradientColorChange(){
         
     }
     
